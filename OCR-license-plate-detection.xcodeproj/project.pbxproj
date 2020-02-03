@@ -14,6 +14,9 @@
 		2825325123E22F93003A1504 /* OCR_license_plate_detection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2825324F23E22F93003A1504 /* OCR_license_plate_detection.xcdatamodeld */; };
 		2825325323E22F95003A1504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2825325223E22F95003A1504 /* Assets.xcassets */; };
 		2825325623E22F95003A1504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2825325423E22F95003A1504 /* LaunchScreen.storyboard */; };
+		2825325F23E23963003A1504 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2825325E23E23963003A1504 /* VideoCapture.swift */; };
+		2825326123E8BFB9003A1504 /* DrawingBoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2825326023E8BFB9003A1504 /* DrawingBoundingBoxView.swift */; };
+		2825326423E8C04A003A1504 /* model_plate_turi.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2825326323E8C04A003A1504 /* model_plate_turi.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		2825325223E22F95003A1504 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2825325523E22F95003A1504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2825325723E22F95003A1504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2825325E23E23963003A1504 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		2825326023E8BFB9003A1504 /* DrawingBoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoundingBoxView.swift; sourceTree = "<group>"; };
+		2825326323E8C04A003A1504 /* model_plate_turi.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = model_plate_turi.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		2825324523E22F92003A1504 /* OCR-license-plate-detection */ = {
 			isa = PBXGroup;
 			children = (
+				2825326223E8C02A003A1504 /* CoreML-Model */,
+				2825325D23E2393C003A1504 /* Utilities */,
 				2825324623E22F92003A1504 /* AppDelegate.swift */,
 				2825324823E22F93003A1504 /* SceneDelegate.swift */,
 				2825324A23E22F93003A1504 /* ViewController.swift */,
@@ -68,6 +76,23 @@
 				2825324F23E22F93003A1504 /* OCR_license_plate_detection.xcdatamodeld */,
 			);
 			path = "OCR-license-plate-detection";
+			sourceTree = "<group>";
+		};
+		2825325D23E2393C003A1504 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2825325E23E23963003A1504 /* VideoCapture.swift */,
+				2825326023E8BFB9003A1504 /* DrawingBoundingBoxView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2825326223E8C02A003A1504 /* CoreML-Model */ = {
+			isa = PBXGroup;
+			children = (
+				2825326323E8C04A003A1504 /* model_plate_turi.mlmodel */,
+			);
+			path = "CoreML-Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2825324B23E22F93003A1504 /* ViewController.swift in Sources */,
+				2825325F23E23963003A1504 /* VideoCapture.swift in Sources */,
 				2825325123E22F93003A1504 /* OCR_license_plate_detection.xcdatamodeld in Sources */,
+				2825326123E8BFB9003A1504 /* DrawingBoundingBoxView.swift in Sources */,
+				2825326423E8C04A003A1504 /* model_plate_turi.mlmodel in Sources */,
 				2825324723E22F92003A1504 /* AppDelegate.swift in Sources */,
 				2825324923E22F93003A1504 /* SceneDelegate.swift in Sources */,
 			);
